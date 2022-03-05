@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    
+
+    <script>
+        const tarefas = [
+            {tarefa: 'estudar js'},
+            {tarefa: 'estudar node.js'},
+            {tarefa: 'estudar react.js'}
+        ]
+
+        const taferasJson = JSON.stringify(tarefas)
+        
+        localStorage.setItem('tarefas', taferasJson)
+        const listaTarefasSalvas = localStorage.getItem('tarefas')
+
+        const listaTarefasObj = JSON.parse(listaTarefasSalvas)
+
+        console.log(listaTarefasObj)
+
+
+
+    </script>
+</body>
+</html>

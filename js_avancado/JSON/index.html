@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    
+
+    <script>
+        /*
+            JSON --> JAVASCRIPT OBJECT NOTATION
+        */
+    
+        const objeto ={
+            nome:'fulano',
+            idade:23,
+        }
+
+        const json = JSON.stringify(objeto)
+        //console.log(json)
+
+        jsonParseado = JSON.parse(json)
+        console.log(jsonParseado)
+        console.log(typeof jsonParseado)
+    </script>
+</body>
+</html>

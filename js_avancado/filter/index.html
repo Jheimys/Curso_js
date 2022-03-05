@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    
+
+    <script>
+
+        const clientes = [
+        {name:'Fulano', lastname:'Da Silva', age:14},
+        {name:'Ciclano', lastname:'santos', age:18},
+        {name:'Beltrano', lastname:'Moreira', age:20},
+
+    ]
+
+    /*
+    const clientesMaiores = clientes.filter(cliente =>{
+       //if ternário
+        return cliente.age >= 18 ? true : false
+    })
+   */
+
+   //Forma simplificad
+    const clientesMaiores = clientes.filter(cliente => cliente.age >=18)
+
+    console.log(clientesMaiores)
+
+
+    </script>
+</body>
+</html>
